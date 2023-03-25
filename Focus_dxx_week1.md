@@ -75,7 +75,7 @@
 
 负值产生的原因：向量的点乘：
 
-<img src="C:\Users\86155\AppData\Roaming\Typora\typora-user-images\image-20230325100322095.png" alt="image-20230325100322095" style="zoom:67%;" />
+<img src="https://github.com/Dongxingxiu/focus_week1dxx/blob/main/image-20230325100322095.png" alt="image-20230325100322095" style="zoom:67%;" />
 
 **而个人感觉此处与线性代数联系紧密，旋转矩阵左右乘不能交换对应旋转顺序不同，结果不同**
 
@@ -109,7 +109,7 @@ disp(gen3)
 show(atlas);%展示模型
 ```
 
-<img src="C:\Users\86155\AppData\Roaming\Typora\typora-user-images\image-20230325113819249.png" alt="image-20230325113819249" style="zoom:50%;" />
+<img src="https://github.com/Dongxingxiu/focus_week1dxx/blob/main/image-20230325113819249.png" alt="image-20230325113819249" style="zoom:50%;" />
 
 
 
@@ -133,7 +133,7 @@ T3=T1*T2%T3经过旋转与平移后得到
 trplot2(T3,'frame','3','color','g')
 ```
 
-<img src="C:\Users\86155\AppData\Roaming\Typora\typora-user-images\image-20230325101216804.png" alt="image-20230325101216804" style="zoom:67%;" />
+<img src="https://github.com/Dongxingxiu/focus_week1dxx/blob/main/image-20230325101216804.png" alt="image-20230325101216804" style="zoom:67%;" />
 
 
 
@@ -152,9 +152,9 @@ trplot2(T3,'frame','3','color','g')
 
   一共九个元素，但是自由度为三
 
-  <img src="C:\Users\86155\AppData\Roaming\Typora\typora-user-images\image-20230325102319687.png" alt="image-20230325102319687" style="zoom:67%;" />
+  <img src="https://github.com/Dongxingxiu/focus_week1dxx/blob/main/image-20230325102319687.png" alt="image-20230325102319687" style="zoom:67%;" />
 
-  <img src="C:\Users\86155\AppData\Roaming\Typora\typora-user-images\image-20230325103429344.png" alt="image-20230325103429344" style="zoom:67%;" />
+  <img src="https://github.com/Dongxingxiu/focus_week1dxx/blob/main/image-20230325103429344.png" alt="image-20230325103429344" style="zoom:67%;" />
 
   X-Y的旋转重合，丢失自由度
 
@@ -164,7 +164,7 @@ trplot2(T3,'frame','3','color','g')
 
 ## 2.4 四元数
 
-<img src="C:\Users\86155\AppData\Roaming\Typora\typora-user-images\image-20230325112457840.png" alt="image-20230325112457840"  />
+<img src="https://github.com/Dongxingxiu/focus_week1dxx/blob/main/\image-20230325112457840.png" alt="image-20230325112457840"  />
 
 一般通过四元数与4*4齐次变换矩阵来用四元数同时描述平移与旋转
 
@@ -202,13 +202,13 @@ T适用于SE(2)或SE(3)中的T
 
 ## 本章总结
 
-<img src="C:\Users\86155\AppData\Roaming\Typora\typora-user-images\image-20230325113655732.png" alt="image-20230325113655732" style="zoom:80%;" />
+<img src="https://github.com/Dongxingxiu/focus_week1dxx/blob/main/image-20230325113655732.png" alt="image-20230325113655732" style="zoom:80%;" />
 
 
 
 
 
-<img src="C:\Users\86155\AppData\Roaming\Typora\typora-user-images\image-20230325113714514.png" alt="image-20230325113714514" style="zoom:80%;" />
+<img src="https://github.com/Dongxingxiu/focus_week1dxx/blob/main/image-20230325113714514.png" alt="image-20230325113714514" style="zoom:80%;" />
 
 
 
