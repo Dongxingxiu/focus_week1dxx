@@ -19,7 +19,7 @@
 
 + 相对位姿的表示与计算：
 
-  ![image-20230324113540386](C:\Users\86155\AppData\Roaming\Typora\typora-user-images\image-20230324113540386.png)
+  ![image-20230324113540386](https://github.com/Dongxingxiu/focus_week1dxx/blob/main/image-20230324113540386.png)
 
   等式两边矢量一定闭合
 
