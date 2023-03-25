@@ -29,7 +29,7 @@
 
   3. 位姿复合运算中位姿不能随便交换
 
-     ![image-20230324113915888](C:\Users\86155\AppData\Roaming\Typora\typora-user-images\image-20230324113915888.png)
+     ![image-20230324113915888](https://github.com/Dongxingxiu/focus_week1dxx/blob/main/image-20230324113915888.png)
 
      
 
@@ -39,7 +39,7 @@
 
 1. 旋转：
 
-   ![image-20230324203840409](C:\Users\86155\AppData\Roaming\Typora\typora-user-images\image-20230324203840409.png)
+   ![image-20230324203840409](https://github.com/Dongxingxiu/focus_week1dxx/blob/main/image-20230324203840409.png)
 
    + 将原坐标系B的X-Y方向的方向向量×旋转矩阵即可得到V的方向向量
 
@@ -47,21 +47,21 @@
 
      标准正交矩阵：每列都是单位向量并且相互正交
 
-     ![image-20230324204322172](C:\Users\86155\AppData\Roaming\Typora\typora-user-images\image-20230324204322172.png)
+     ![image-20230324204322172](https://github.com/Dongxingxiu/focus_week1dxx/blob/main/image-20230324204322172.png)
 
      
 
 2. 平移与旋转结合：
 
-   ![image-20230324204517078](C:\Users\86155\AppData\Roaming\Typora\typora-user-images\image-20230324204517078.png)
+   ![image-20230324204517078](https://github.com/Dongxingxiu/focus_week1dxx/blob/main/image-20230324204517078.png)
 
    相互平行的坐标系可以进行简单的向量相加，但是为了更简便的表达，我们将旋转矩阵扩充一个维度
 
-![image-20230324204659152](C:\Users\86155\AppData\Roaming\Typora\typora-user-images\image-20230324204659152.png)
+![image-20230324204659152](https://github.com/Dongxingxiu/focus_week1dxx/blob/main/image-20230324204659152.png)
 
 这样，通过扩充后的矩阵，我们可以只通过一个矩阵同时表示平移与旋转，我们记为T（齐次转换矩阵）
 
-![image-20230324205101584](C:\Users\86155\AppData\Roaming\Typora\typora-user-images\image-20230324205101584.png)
+![image-20230324205101584](https://github.com/Dongxingxiu/focus_week1dxx/blob/main/image-20230324205101584.png)
 
 <img src="https://img-blog.csdnimg.cn/20210609154632639.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTYzMjIyMA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" style="zoom:50%;" />
 
