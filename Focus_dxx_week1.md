@@ -15,7 +15,7 @@
 # 机器人学--位置与姿态的描述
 
 + 坐标系的位置与方向统称为位姿
-+ ![image-20230324113333622](C:\Users\86155\AppData\Roaming\Typora\typora-user-images\image-20230324113333622.png)
++ ![image-20230324113333622](https://github.com/Dongxingxiu/focus_week1dxx/blob/main/image-20230324113333622.png)
 
 + 相对位姿的表示与计算：
 
