@@ -15,11 +15,11 @@
 # 机器人学--位置与姿态的描述
 
 + 坐标系的位置与方向统称为位姿
-+ ![image-20230324113333622](C:\Users\86155\AppData\Roaming\Typora\typora-user-images\image-20230324113333622.png)
++ ![](https://typora-dxx.oss-cn-hangzhou.aliyuncs.com/image-20230324113333622.png)
 
 + 相对位姿的表示与计算：
 
-  ![image-20230324113540386](C:\Users\86155\AppData\Roaming\Typora\typora-user-images\image-20230324113540386.png)
+  ![image-20230324113540386](https://typora-dxx.oss-cn-hangzhou.aliyuncs.com/image-20230324113540386.png)
 
   等式两边矢量一定闭合
 
@@ -29,7 +29,7 @@
 
   3. 位姿复合运算中位姿不能随便交换
 
-     ![image-20230324113915888](C:\Users\86155\AppData\Roaming\Typora\typora-user-images\image-20230324113915888.png)
+     ![](https://typora-dxx.oss-cn-hangzhou.aliyuncs.com/image-20230324113915888.png)
 
      
 
@@ -39,7 +39,7 @@
 
 1. 旋转：
 
-   ![image-20230324203840409](C:\Users\86155\AppData\Roaming\Typora\typora-user-images\image-20230324203840409.png)
+   ![image-20230324203840409](https://typora-dxx.oss-cn-hangzhou.aliyuncs.com/image-20230324203840409.png)
 
    + 将原坐标系B的X-Y方向的方向向量×旋转矩阵即可得到V的方向向量
 
@@ -47,35 +47,35 @@
 
      标准正交矩阵：每列都是单位向量并且相互正交
 
-     ![image-20230324204322172](C:\Users\86155\AppData\Roaming\Typora\typora-user-images\image-20230324204322172.png)
+     ![image-20230324204322172](https://typora-dxx.oss-cn-hangzhou.aliyuncs.com/image-20230324204322172.png)
 
      
 
 2. 平移与旋转结合：
 
-   ![image-20230324204517078](C:\Users\86155\AppData\Roaming\Typora\typora-user-images\image-20230324204517078.png)
+   ![image-20230324204517078](https://typora-dxx.oss-cn-hangzhou.aliyuncs.com/image-20230324204517078.png)
 
    相互平行的坐标系可以进行简单的向量相加，但是为了更简便的表达，我们将旋转矩阵扩充一个维度
 
-![image-20230324204659152](C:\Users\86155\AppData\Roaming\Typora\typora-user-images\image-20230324204659152.png)
+![image-20230324204659152](https://typora-dxx.oss-cn-hangzhou.aliyuncs.com/image-20230324204659152.png)
 
 这样，通过扩充后的矩阵，我们可以只通过一个矩阵同时表示平移与旋转，我们记为T（齐次转换矩阵）
 
-![image-20230324205101584](C:\Users\86155\AppData\Roaming\Typora\typora-user-images\image-20230324205101584.png)
+![image-20230324205101584](https://typora-dxx.oss-cn-hangzhou.aliyuncs.com/image-20230324205101584.png)
 
-<img src="https://img-blog.csdnimg.cn/20210609154632639.jpg?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTYzMjIyMA==,size_16,color_FFFFFF,t_70" alt="在这里插入图片描述" style="zoom:50%;" />
+<img src="https://typora-dxx.oss-cn-hangzhou.aliyuncs.com/20210609154632639.jpg" alt="在这里插入图片描述" style="zoom:50%;" />
 
 ### 对旋转矩阵中负值的理解：
 
 顺时针旋转会在矩阵中产生一个负值
 
-![在这里插入图片描述](https://img-blog.csdnimg.cn/20210609154935348.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5naGVpdGk,shadow_10,text_aHR0cHM6Ly9ibG9nLmNzZG4ubmV0L3dlaXhpbl80NTYzMjIyMA==,size_16,color_FFFFFF,t_70)
+![在这里插入图片描述](https://typora-dxx.oss-cn-hangzhou.aliyuncs.com/20210609154935348.png)
 
 
 
 负值产生的原因：向量的点乘：
 
-<img src="C:\Users\86155\AppData\Roaming\Typora\typora-user-images\image-20230325100322095.png" alt="image-20230325100322095" style="zoom:67%;" />
+<img src="https://typora-dxx.oss-cn-hangzhou.aliyuncs.com/image-20230325100322095.png" alt="image-20230325100322095" style="zoom:67%;" />
 
 **而个人感觉此处与线性代数联系紧密，旋转矩阵左右乘不能交换对应旋转顺序不同，结果不同**
 
@@ -109,7 +109,7 @@ disp(gen3)
 show(atlas);%展示模型
 ```
 
-<img src="C:\Users\86155\AppData\Roaming\Typora\typora-user-images\image-20230325113819249.png" alt="image-20230325113819249" style="zoom:50%;" />
+<img src="https://typora-dxx.oss-cn-hangzhou.aliyuncs.com/image-20230325113819249.png" alt="image-20230325113819249" style="zoom:50%;" />
 
 
 
@@ -133,7 +133,7 @@ T3=T1*T2%T3经过旋转与平移后得到
 trplot2(T3,'frame','3','color','g')
 ```
 
-<img src="C:\Users\86155\AppData\Roaming\Typora\typora-user-images\image-20230325101216804.png" alt="image-20230325101216804" style="zoom:67%;" />
+<img src="https://typora-dxx.oss-cn-hangzhou.aliyuncs.com/image-20230325101216804.png" alt="image-20230325101216804" style="zoom:67%;" />
 
 
 
@@ -152,9 +152,9 @@ trplot2(T3,'frame','3','color','g')
 
   一共九个元素，但是自由度为三
 
-  <img src="C:\Users\86155\AppData\Roaming\Typora\typora-user-images\image-20230325102319687.png" alt="image-20230325102319687" style="zoom:67%;" />
+  <img src="https://typora-dxx.oss-cn-hangzhou.aliyuncs.com/image-20230325102319687.png" alt="image-20230325102319687" style="zoom:67%;" />
 
-  <img src="C:\Users\86155\AppData\Roaming\Typora\typora-user-images\image-20230325103429344.png" alt="image-20230325103429344" style="zoom:67%;" />
+  <img src="https://typora-dxx.oss-cn-hangzhou.aliyuncs.com/image-20230325103429344.png" alt="image-20230325103429344" style="zoom:67%;" />
 
   X-Y的旋转重合，丢失自由度
 
@@ -164,7 +164,7 @@ trplot2(T3,'frame','3','color','g')
 
 ## 2.4 四元数
 
-<img src="C:\Users\86155\AppData\Roaming\Typora\typora-user-images\image-20230325112457840.png" alt="image-20230325112457840"  />
+<img src="https://typora-dxx.oss-cn-hangzhou.aliyuncs.com/image-20230325112457840.png" alt="image-20230325112457840"  />
 
 一般通过四元数与4*4齐次变换矩阵来用四元数同时描述平移与旋转
 
@@ -202,13 +202,13 @@ T适用于SE(2)或SE(3)中的T
 
 ## 本章总结
 
-<img src="C:\Users\86155\AppData\Roaming\Typora\typora-user-images\image-20230325113655732.png" alt="image-20230325113655732" style="zoom:80%;" />
+<img src="https://typora-dxx.oss-cn-hangzhou.aliyuncs.com/image-20230325113655732.png" alt="image-20230325113655732" style="zoom:80%;" />
 
 
 
 
 
-<img src="C:\Users\86155\AppData\Roaming\Typora\typora-user-images\image-20230325113714514.png" alt="image-20230325113714514" style="zoom:80%;" />
+<img src="https://typora-dxx.oss-cn-hangzhou.aliyuncs.com/image-20230325113714514.png" alt="image-20230325113714514" style="zoom:80%;" />
 
 
 
